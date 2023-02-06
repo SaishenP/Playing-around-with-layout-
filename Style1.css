@@ -1,0 +1,30 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border: 5px solid blueviolet;
+  padding: 15px 15px 15px 15px;
+  margin: 15px 15px 15px 15px;
+  box-sizing: border-box;
+
+  
+ animation: float 2s infinite alternate-reverse;
+ transition:all 300ms;
+}
+div{
+  transition:background-color 300ms ; 
+}
+div:hover{
+background-color:blueviolet;
+}
+
+@keyframes float {
+  0%{
+transform: translateY(0);
+  }
+  100%{
+
+transform: translateY(10px);
+  }
+  
+}
